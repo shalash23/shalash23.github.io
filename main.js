@@ -17,3 +17,17 @@ const observer = new IntersectionObserver((entries) =>{
 const hiddenElements = document.querySelectorAll('.hidden');
 
 hiddenElements.forEach((el)=> observer.observe(el));
+
+
+let i = 0;
+let text = "Full Stack Development";
+
+const typing = () =>{
+    if(i<text.length){
+        document.querySelector('.typing').innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing,70);
+    }
+}
+typing();
+

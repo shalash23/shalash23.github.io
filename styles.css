@@ -1,8 +1,12 @@
-
+*{
+    scroll-behavior: smooth;
+    font-family: "Roboto",sans-serif;
+    
+}
 
 
 .herosection{
-    background-image: url(Assets/businessman-using-digital-tablet.jpg);
+    background-image: url(Assets/businessman-using-digital-tablet2.jpg);
     height:100vh;
     background-size:cover;
     background-repeat: no-repeat;
@@ -14,10 +18,24 @@
 
 .hidden{
   opacity: 0;
-    transition: all 1s;
+    transition: all 0.8s;
+    filter:blur(5px);
+    transform: translateX(-100%);
 }
 
 .show{
    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
     
+}
+
+.acheivements:nth-child(2){
+    transition-delay: 200ms;
+}
+.acheivements:nth-child(3){
+    transition-delay: 400ms;
+}
+.acheivements:nth-child(4){
+    transition-delay: 500ms;
 }
