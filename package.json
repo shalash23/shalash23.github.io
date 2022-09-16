@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "material-components-web": "^14.0.0",
+    "mdb-ui-kit": "^5.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+
+.herosection{
+    background-image: url(Assets/banner.jpg);
+    height:600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: gray;
+}
