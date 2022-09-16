@@ -1,7 +1,17 @@
-import {MDCTopAppBar} from '@material/top-app-bar';
-
-// Instantiation
-const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-const topAppBar = new MDCTopAppBar(topAppBarElement);
 
 
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('.show')
+            
+        }else{
+            entry.target.classList.remove('.show')
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+
+hiddenElements.forEach((el)=> observer.observe(el) );
